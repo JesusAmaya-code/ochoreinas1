@@ -1,0 +1,19 @@
+/*Codigo o lenguaje CCS*/
+
+table, td, tr
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 400px;
+    height: 50px;
+}
+
+tr:nth-child(eve¿n) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd)
+{
+    background: white;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd)
+{
+    background: black;
+}
