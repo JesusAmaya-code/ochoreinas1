@@ -17,7 +17,7 @@
                 height: 50px;
             }
 
-            tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd)
+            tr:nth-child(eve¿n) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd)
             {
                 background: white;
             }
@@ -30,8 +30,17 @@
 
         <script>
             //Lenguaje de programación Javascript
+            //Declaración de variables globales
+            var counter = 0;
             function cellClick(cell){
-                cell.style="background-image:url(queen.png);background-size:cover;";
+                if (counter<8)
+                {
+                    cell.style="background-image:url(queen.png);background-size:cover;";
+                    counter++;
+                }else{
+                    alert("Las ocho reinas han sido colocadas");
+                }
+                
             }
         </script>
     </head>
