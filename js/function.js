@@ -7,11 +7,12 @@ function cellClick(cell)
     {
         if (counter<8)
         {
+        counter++;
         cell.style="background-image:url(img/queen.png);background-size:cover;";
         blockCells(cell);
-        counter++;
-        }else{
-            alert("Las ocho reinas han sido colocadas");
+        if (counter==8){
+            document.getElementById("message").innerText = "¡Felicidades! Has colocado las ocho reinas.";
+        }
              }
     }else{
         cell.style="background-image:none;";
@@ -99,4 +100,7 @@ function unblockCells (cell) {
         }
     }
           
+}
+function resetBoard() {
+    location.reload();
 }
