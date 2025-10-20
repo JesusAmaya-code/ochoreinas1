@@ -10,10 +10,10 @@ table, td, tr
 
 tr:nth-child(eve¿n) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd)
 {
-    background: white;
+    background-color: white;
 }
 
 tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd)
 {
-    background: black;
+    background-color: black;
 }
